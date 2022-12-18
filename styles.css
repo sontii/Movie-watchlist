@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: black;
 }
 
 header{
@@ -74,14 +75,14 @@ main {
     max-width: 550px;
     height: 570px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rebeccapurple;
+    flex-direction: column;
+    background-color: white;
 }
 
 .start-container{
     text-align: center;
-    display: none;
+    margin: auto;
+    display: none ;
 }
 
 .start-container > p {
@@ -92,8 +93,12 @@ main {
     color: #DFDDDD;
 }
 
+.container{
+    display:none
+}
+
 .movie-card{
-    margin: 0 2rem;
+    margin: 2.75rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +107,9 @@ main {
 
 .movie-image{
     height: 147px;
-    width: 100px;
+    width: 99px;
     border: 1px solid black;
+    flex-shrink: 0
 }
 
 .movie-title{
@@ -138,4 +144,8 @@ main {
 
 .movie-description >h2{
     font-size: 0.875em;
+}
+
+hr{
+    margin: 1.25rem 2rem;
 }
