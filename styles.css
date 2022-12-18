@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0E0E0E;
+    background-image:
+    url('images/background.png');
+    position: relative;
+}
+
+a:link,
+a:visited { 
+    text-decoration: none; 
+    color: white;
+}
+
+header > a:nth-child(1) {
+    font-weight: 800;
+    font-size: 2.675em;
+    line-height: 1.5em;
+    margin: 3.8rem 2.625rem 3.8rem 0;
+}
+
+header > a:nth-child(2) {
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    margin-right: 2.625rem;
+}
+
+form {
+  display: flex;
+  height: 2.375rem;
+  width: 80%;
+  justify-content: center;
+  position: absolute;
+  bottom: -1.187rem;
+}
+
+input[type="search"],
+button[type="submit"]{
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+button[type="submit"] {
+    border-radius: 0 6px 6px 0;
+    width: 30%;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    color: #374151;
+}
+
+input[type="search"] {
+    width: 80%;
+    background: transparent url("images/Search.png") no-repeat 20px center;
+    background-position: 3%;
+    border-radius: 6px 0 0 6px;
+    background-color: white;
+    padding-left: 2rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 550px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+}
+
+.start-container{
+    text-align: center;
+    display: none;
+}
+
+.start-container > p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 1.25em;
+    color: #DFDDDD;
+}
+
+.movie-card{
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.movie-image{
+    height: 147px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.movie-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.movie-title >h3{
+    font-weight: 500;
+    font-size: 1.125em;
+}
+
+.movie-properties{
+    display: flex;
+}
+
+.movie-title h2,
+.movie-properties >h2:nth-child(1),
+.movie-properties >h2:nth-child(2),
+#watchlist-btn,
+.movie-description >h2{
+    font-weight: 400;
+    font-size: 0.75em;
+    margin-right: 2.2rem;
+}
+
+#watchlist-btn{
+    border: 0;
+    background-color: inherit;
+}
+
+.movie-description >h2{
+    font-size: 0.875em;
+}
