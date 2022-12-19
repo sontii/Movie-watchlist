@@ -22,11 +22,12 @@ a:visited {
     color: white;
 }
 
-header > a:nth-child(1) {
+header > h6 {
     font-weight: 800;
     font-size: 2.675em;
     line-height: 1.5em;
     margin: 3.8rem 2.625rem 3.8rem 0;
+    color: white;
 }
 
 header > a:nth-child(2) {
@@ -34,6 +35,7 @@ header > a:nth-child(2) {
     font-size: 0.875em;
     line-height: 1.25em;
     margin-right: 2.625rem;
+    
 }
 
 form {
@@ -52,6 +54,10 @@ button[type="submit"]{
     background-color: white;
 }
 
+input:focus{
+    outline: none;
+}
+
 button[type="submit"] {
     border-radius: 0 6px 6px 0;
     width: 30%;
@@ -59,6 +65,7 @@ button[type="submit"] {
     font-size: 0.875em;
     line-height: 1.25em;
     color: #374151;
+    cursor: pointer;
 }
 
 input[type="search"] {
@@ -73,16 +80,16 @@ input[type="search"] {
 main {
     margin: 0 auto;
     max-width: 550px;
-    height: 570px;
+    min-height: 570px;
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-top: 4rem;
 }
 
 .start-container{
     text-align: center;
-    margin: auto;
-    display: none ;
+    margin: 25% 20%;
 }
 
 .start-container > p {
@@ -93,12 +100,8 @@ main {
     color: #DFDDDD;
 }
 
-.container{
-    display:none
-}
-
 .movie-card{
-    margin: 2.75rem 2rem;
+    margin: 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,44 +111,90 @@ main {
 .movie-image{
     height: 147px;
     width: 99px;
-    border: 1px solid black;
     flex-shrink: 0
+}
+
+.movie-image > img{
+    width: 100%;
 }
 
 .movie-title{
     display: flex;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
     gap: 1rem;
 }
 
-.movie-title >h3{
+.movie-title > h6{
+    width: 3rem;
+    
+}
+
+.movie-title >h5{
     font-weight: 500;
     font-size: 1.125em;
+    margin-bottom: 1rem;
 }
 
 .movie-properties{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-.movie-title h2,
-.movie-properties >h2:nth-child(1),
-.movie-properties >h2:nth-child(2),
+.movie-title h6,
+.movie-properties >h6:nth-child(1),
+.movie-properties >h6:nth-child(2),
 #watchlist-btn,
-.movie-description >h2{
+.movie-description >h6{
     font-weight: 400;
     font-size: 0.75em;
-    margin-right: 2.2rem;
 }
 
 #watchlist-btn{
     border: 0;
     background-color: inherit;
+    cursor: pointer;
 }
 
-.movie-description >h2{
+.movie-description >h6{
     font-size: 0.875em;
 }
 
-hr{
-    margin: 1.25rem 2rem;
+h5,
+h6{
+    margin: 0
 }
+
+hr{
+    margin: 2rem 2rem;
+}
+
+.empty,
+.add-movie{
+    font-weight: 700;
+}
+
+.empty{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 1.75em;
+    color: #DFDDDD;
+}
+
+.add-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap:0.5rem;
+}
+
+.add-movie{
+    font-size: 0.875em;
+    line-height: 1.25em;
+    color: #363636;
+    cursor: pointer;
+}
+
+
